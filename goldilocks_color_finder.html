@@ -1,0 +1,129 @@
+
+<style>
+  .wrap { display: flex; gap: 12px; padding: 1rem 0; font-family: Arial, sans-serif; }
+  .panel { flex: 1; border-radius: 10px; padding: 14px; }
+  .pl { background: #ffffff; border: 1px solid #e0e0e0; }
+  .pd { background: #1c1c1e; border: 1px solid #3a3a3a; }
+  .plabel { font-size: 10px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 10px; }
+  .pl .plabel { color: #aaa; }
+  .pd .plabel { color: #555; }
+  .row { display: flex; align-items: center; gap: 8px; margin-bottom: 11px; }
+  .circles { display: flex; gap: 4px; }
+  .c { width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .bar { width: 3px; height: 32px; border-radius: 2px; flex-shrink: 0; }
+  .info { display: flex; flex-direction: column; }
+  .iname { font-size: 11px; font-weight: 600; }
+  .ihex  { font-size: 10px; font-family: monospace; }
+  .pl .iname { color: #222; }
+  .pl .ihex  { color: #999; }
+  .pd .iname { color: #ddd; }
+  .pd .ihex  { color: #555; }
+  .badge { font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 3px; margin-top: 2px; display: inline-block; width: fit-content; }
+  .good { background: #d4edda; color: #155724; }
+  .ok   { background: #fff3cd; color: #856404; }
+  svg.i { width: 13px; height: 13px; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+
+<div class="wrap">
+
+  <div class="panel pl">
+    <div class="plabel">Light mode (white bg)</div>
+
+    <div class="row">
+      <div class="circles">
+        <div class="c" style="background:#4a90d9;"><svg class="i" style="stroke:#000" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+        <div class="c" style="background:#4a90d9;"><svg class="i" style="stroke:#000" viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><path d="M20 20l-4-4"/></svg></div>
+      </div>
+      <div class="bar" style="background:#4a90d9;"></div>
+      <div class="info"><span class="iname">Medium blue</span><span class="ihex">#4a90d9</span><span class="badge good">✓ works</span></div>
+    </div>
+
+    <div class="row">
+      <div class="circles">
+        <div class="c" style="background:#3aaa85;"><svg class="i" style="stroke:#000" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+        <div class="c" style="background:#3aaa85;"><svg class="i" style="stroke:#000" viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><path d="M20 20l-4-4"/></svg></div>
+      </div>
+      <div class="bar" style="background:#3aaa85;"></div>
+      <div class="info"><span class="iname">Medium teal</span><span class="ihex">#3aaa85</span><span class="badge good">✓ works</span></div>
+    </div>
+
+    <div class="row">
+      <div class="circles">
+        <div class="c" style="background:#c8873a;"><svg class="i" style="stroke:#000" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+        <div class="c" style="background:#c8873a;"><svg class="i" style="stroke:#000" viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><path d="M20 20l-4-4"/></svg></div>
+      </div>
+      <div class="bar" style="background:#c8873a;"></div>
+      <div class="info"><span class="iname">Burnt amber</span><span class="ihex">#c8873a</span><span class="badge good">✓ works</span></div>
+    </div>
+
+    <div class="row">
+      <div class="circles">
+        <div class="c" style="background:#7b6ec4;"><svg class="i" style="stroke:#000" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+        <div class="c" style="background:#7b6ec4;"><svg class="i" style="stroke:#000" viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><path d="M20 20l-4-4"/></svg></div>
+      </div>
+      <div class="bar" style="background:#7b6ec4;"></div>
+      <div class="info"><span class="iname">Medium purple</span><span class="ihex">#7b6ec4</span><span class="badge good">✓ works</span></div>
+    </div>
+
+    <div class="row">
+      <div class="circles">
+        <div class="c" style="background:#c0586a;"><svg class="i" style="stroke:#000" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+        <div class="c" style="background:#c0586a;"><svg class="i" style="stroke:#000" viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><path d="M20 20l-4-4"/></svg></div>
+      </div>
+      <div class="bar" style="background:#c0586a;"></div>
+      <div class="info"><span class="iname">Dusty rose</span><span class="ihex">#c0586a</span><span class="badge ok">~ neutral</span></div>
+    </div>
+
+  </div>
+
+  <div class="panel pd">
+    <div class="plabel">Dark mode (dark bg)</div>
+
+    <div class="row">
+      <div class="circles">
+        <div class="c" style="background:#4a90d9;"><svg class="i" style="stroke:#fff" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+        <div class="c" style="background:#4a90d9;"><svg class="i" style="stroke:#fff" viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><path d="M20 20l-4-4"/></svg></div>
+      </div>
+      <div class="bar" style="background:#4a90d9;"></div>
+      <div class="info"><span class="iname">Medium blue</span><span class="ihex">#4a90d9</span><span class="badge good">✓ works</span></div>
+    </div>
+
+    <div class="row">
+      <div class="circles">
+        <div class="c" style="background:#3aaa85;"><svg class="i" style="stroke:#fff" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+        <div class="c" style="background:#3aaa85;"><svg class="i" style="stroke:#fff" viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><path d="M20 20l-4-4"/></svg></div>
+      </div>
+      <div class="bar" style="background:#3aaa85;"></div>
+      <div class="info"><span class="iname">Medium teal</span><span class="ihex">#3aaa85</span><span class="badge good">✓ works</span></div>
+    </div>
+
+    <div class="row">
+      <div class="circles">
+        <div class="c" style="background:#c8873a;"><svg class="i" style="stroke:#fff" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+        <div class="c" style="background:#c8873a;"><svg class="i" style="stroke:#fff" viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><path d="M20 20l-4-4"/></svg></div>
+      </div>
+      <div class="bar" style="background:#c8873a;"></div>
+      <div class="info"><span class="iname">Burnt amber</span><span class="ihex">#c8873a</span><span class="badge good">✓ works</span></div>
+    </div>
+
+    <div class="row">
+      <div class="circles">
+        <div class="c" style="background:#7b6ec4;"><svg class="i" style="stroke:#fff" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+        <div class="c" style="background:#7b6ec4;"><svg class="i" style="stroke:#fff" viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><path d="M20 20l-4-4"/></svg></div>
+      </div>
+      <div class="bar" style="background:#7b6ec4;"></div>
+      <div class="info"><span class="iname">Medium purple</span><span class="ihex">#7b6ec4</span><span class="badge good">✓ works</span></div>
+    </div>
+
+    <div class="row">
+      <div class="circles">
+        <div class="c" style="background:#c0586a;"><svg class="i" style="stroke:#fff" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+        <div class="c" style="background:#c0586a;"><svg class="i" style="stroke:#fff" viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><path d="M20 20l-4-4"/></svg></div>
+      </div>
+      <div class="bar" style="background:#c0586a;"></div>
+      <div class="info"><span class="iname">Dusty rose</span><span class="ihex">#c0586a</span><span class="badge ok">~ neutral</span></div>
+    </div>
+
+  </div>
+
+</div>
